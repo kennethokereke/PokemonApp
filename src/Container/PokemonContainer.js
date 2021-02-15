@@ -9,7 +9,7 @@ export const PokemonsContanier = () => {
     })
 
     return (
-        <div className="pokemon">
+        <div className="container">
             {/* JSON.stringify(name) is concerting API to JSON */}
             {pokemons && pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon}/>)}
         </div>
