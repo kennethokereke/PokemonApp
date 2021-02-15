@@ -1,7 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {ApolloProvider} from '@apollo/react-hooks'
 import ApolloClient from 'apollo-boost'
+import PokemonsContanier from './Container/PokemonContainer';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     return(
      <ApolloProvider client={client}>
        <main>
-         <p>I am a pokemon</p>
+        <PokemonsContanier/>
        </main>
      </ApolloProvider>
     )
